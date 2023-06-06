@@ -16,4 +16,7 @@
 > 11. a ^ b - computes a to the power of b and return the value
 > 12. Fizz Buzz - prints the numbers from 1 to 100 separated by a space
 > 13. Insert in sorted linked list
+> 14. Smile in the mirror
+> 15. Remove at position
+> 16. ByteCode -> Python #2
 ---
