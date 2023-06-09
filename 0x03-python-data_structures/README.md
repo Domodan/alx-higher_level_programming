@@ -16,7 +16,5 @@
 > 11. Delete at - Write a function that deletes the item at a specific position in a list
 > 12. Switch - Complete the source code in order to switch value of a and b
 > 13. Linked list palindrome
-> 14. 
-> 15. Remove at position
-> 16. ByteCode -> Python #2
+> 14. CPython #0: Python lists - Create a C function that prints some basic info about Python lists 
 ---
