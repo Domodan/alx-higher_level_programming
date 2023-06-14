@@ -15,8 +15,8 @@
 > 10. Best score - a function that returns a key with the biggest integer value
 > 11. Multiply using map - a function that returns a list with all values multiplied by a number without using any loops
 > 12. Roman to Integer - a function that converts a Roman numeral to an integer
-> 13. 
-> 14. Smile in the mirror
-> 15. Remove at position
-> 16. ByteCode -> Python #2
+> 13. Weighted average! - a function that returns the weighted average of all integers tuple (`<score>`, `<weight>`)
+> 14. Squared by using map - a function that computes the square value of all integers of a matrix using map
+> 15. Delete by a value - a function that deletes keys with a specific value in a dictionary
+> 16. CPython #1: PyBytesObject
 ---
