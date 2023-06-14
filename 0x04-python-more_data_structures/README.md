@@ -3,19 +3,19 @@
 ---
 `0x04-python-more_data_structures`
 > 0. Squared simple - a function that computes the square value of all integers of a matrix
-> 1. The last digit
-> 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
-> 3. When I was having that alphabet soup, I never thought that it would pay off
-> 4. Hexadecimal printing
-> 5. 00..99 - Printing numbers from 0 to 99
-> 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
-> 7. islower - Checking for lowercase characters
-> 8. To uppercase
-> 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
-> 10. a + b - adds two integers and returns the result
-> 11. a ^ b - computes a to the power of b and return the value
-> 12. Fizz Buzz - prints the numbers from 1 to 100 separated by a space
-> 13. Insert in sorted linked list
+> 1. Search and replace - search and replace - a function that replaces all occurrences of an element by another in a new list
+> 2. Unique addition - a function that adds all unique integers in a list (only once for each integer)
+> 3. Present in both - a function that returns a set of common elements in two sets
+> 4. Only differents - a function that returns a set of all elements present in only one set
+> 5. Number of Keys - a function that returns the number of keys in a dictionary
+> 6. Print sorted dictionary - a function that prints a dictionary by ordered keys
+> 7. Update dictionary -  a function that replaces or adds key/value in a dictionary
+> 8. Simple delete by key - a function that deletes a key in a dictionary
+> 9. Multiply by 2 - a function that deletes a key in a dictionary
+> 10. Best score - a function that returns a key with the biggest integer value
+> 11. Multiply using map - a function that returns a list with all values multiplied by a number without using any loops
+> 12. Roman to Integer - a function that converts a Roman numeral to an integer
+> 13. 
 > 14. Smile in the mirror
 > 15. Remove at position
 > 16. ByteCode -> Python #2
