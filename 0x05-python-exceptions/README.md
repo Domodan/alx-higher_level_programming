@@ -9,5 +9,8 @@
 > 4. Divide a list - a function that divides element by element 2 lists
 > 5. Raise exception - a function that raises a type exception
 > 6. Raise a message - a function that raises a name exception with a message
-> 
+> 7. Safe integer print with error message
+> 8. Safe function
+> 9. ByteCode -> Python #4
+> 10. CPython #2: PyFloatObject
 ---
