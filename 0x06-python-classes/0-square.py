@@ -2,6 +2,7 @@
 """ Creates an empty class called Square
 """
 
+
 class Square:
     """ Empty class using pass
     """
