@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+""" Creates an empty class Square
+"""
+
+
 class Square:
-    """ Empty class with size private attribute
+    """ Empty class withprivate attribute size
     """
     def __init__(self, size):
         """
