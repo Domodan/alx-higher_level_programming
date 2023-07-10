@@ -13,12 +13,9 @@ class Rectangle(BaseGeometry):
     Inherits from BaseGeometry
 
     """
-
     def __init__(self, width, height):
         """
-
-        Initialize rectangle value
-        
+            Initialize rectangle value
         """
         self.integer_validator("width", width)
         self.__width = width
