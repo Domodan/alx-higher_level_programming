@@ -1,36 +1,21 @@
 #!/usr/bin/python3
 """
-    Module: MyInt - Inherits from int class
+    Module: MyInt inherits from int
 """
 
 
 class MyInt(int):
     """
-
-    Inherits from int class
-
+        MyInt implements int. (inherits from)
     """
-    def __init__(self, value):
-        """
+    def __init__(self, number):
+        self.number = number
 
-        Initialize value
+    def __ne__(self, value):
+        return (self.number == value)
 
-        """
-        self.value = value
+    def __eq__(self, value):
+        return (self.number != value)
 
-    def __ne__(self, x):
-        """
-
-        Not equal to comparison
-
-        """
-        if self.value is x:
-            return True
-
-    def __eq__(self, x):
-        """
-
-        Equal to comparison
-        
-        """
-        return not self.__ne__(x)
+    def __str__(self):
+        return (str(self.number))
