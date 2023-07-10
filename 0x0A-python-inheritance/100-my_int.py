@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
     Module: MyInt - Inherits from int class
-
 """
 
 
