@@ -15,5 +15,6 @@
 > 10. Student to JSON with filter
 > 11. Student to JSON with filter
 > 12. Pascal's Triangle
-> 13. 
+> 13. Search and update
+> 14. Log parsing 
 ---
