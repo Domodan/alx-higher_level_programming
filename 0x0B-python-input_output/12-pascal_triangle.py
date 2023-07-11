@@ -7,17 +7,17 @@
 def pascal_triangle(n):
     """
         Returns a Pascal's triangle
-        list of triangle.
+        list of n.
 
             Args:
-                triangle (int): An integer
+                n (int): An integer
     """
     result = []
     prev = []
     curr = []
     curr_len = 0
 
-    while triangle > 0:
+    while n > 0:
         prev = curr
         curr = curr + [1]
         i = 1
@@ -25,6 +25,6 @@ def pascal_triangle(n):
             curr[i] = prev[i - 1] + prev[i]
             i += 1
         result.append(curr)
-        triangle -= 1
+        n -= 1
 
     return result
