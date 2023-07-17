@@ -34,7 +34,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """
-            getter for width
+            Getter for width
         """
         return self.__width
 
@@ -42,7 +42,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """
-            setter for width
+            Setter for width
         """
         if type(value) != int:
             raise TypeError("width must be an integer")
@@ -55,7 +55,7 @@ class Rectangle(Base):
     @property
     def height(self):
         """
-            getter for height
+            Getter for height
         """
         return self.__height
 
@@ -63,7 +63,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """
-            setter for height
+            Setter for height
         """
         if type(value) != int:
             raise TypeError("height must be an integer")
@@ -76,7 +76,7 @@ class Rectangle(Base):
     @property
     def x(self):
         """
-            getter for x
+            Getter for x
         """
         return self.__x
 
@@ -84,7 +84,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """
-            setter for x
+            Setter for x
         """
         if type(value) != int:
             raise TypeError("x must be an integer")
@@ -97,7 +97,7 @@ class Rectangle(Base):
     @property
     def y(self):
         """
-            getter for y
+            Getter for y
         """
         return self.__y
 
@@ -105,7 +105,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """
-            setter for y
+            Setter for y
         """
         if type(value) != int:
             raise TypeError("y must be an integer")
@@ -117,17 +117,26 @@ class Rectangle(Base):
 
     def area(self):
         """
-            returns area of the rectangle
+            Returns area of the rectangle
         """
         return self.__width * self.__height
 
 
     def display(self):
         """
-            prints rectangle to stdout with instance "#"
+            Prints rectangle to stdout with instance "#"
         """
         for i in range(self.__y):
             print()
         for i in range(self.__height):
             print(" " * self.__x, end="")
             print("#" * self.__width)
+
+
+    def __str__(self):
+        """
+            Returns a string format of the rectangle class
+        """
+        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id,
+                                                self.__x, self.__y,
+                                                self.__width, self.__height)
