@@ -31,7 +31,6 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-
     @staticmethod
     def to_json_string(list_dictionaries):
         """
@@ -40,7 +39,6 @@ class Base:
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         return json.dumps(list_dictionaries)
-
 
     @classmethod
     def save_to_file(cls, list_objs):
@@ -60,7 +58,6 @@ class Base:
                 list_dicts = [o.to_dictionary() for o in list_objs]
                 jsonfile.write(Base.to_json_string(list_dicts))
 
-
     @staticmethod
     def from_json_string(json_string):
         """
@@ -70,14 +67,13 @@ class Base:
             return []
         return json.loads(json_string)
 
-
     @classmethod
     def create(cls, **dictionary):
         """
             Return a class instantied from a dictionary of attributes
 
             Args:
-                **dictionary (dict): Key/value pairs of attributes to initialize.
+                **dictionary (dict): Key/value pairs of attribute to init
         """
 
         if dictionary and dictionary != {}:
@@ -88,7 +84,6 @@ class Base:
             new.update(**dictionary)
 
             return new
-
 
     @classmethod
     def load_from_file(cls):
@@ -108,7 +103,6 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
-
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
@@ -130,7 +124,6 @@ class Base:
                             [obj.id, obj.width, obj.height, obj.x, obj.y])
                     if cls.__name__ == "Square":
                         writer.writerow([obj.id, obj.width, obj.x, obj.y])
-
 
     @classmethod
     def load_from_file_csv(cls):
@@ -158,7 +151,6 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
-
 
     @staticmethod
     def draw(list_rectangles, list_squares):
