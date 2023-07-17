@@ -30,14 +30,12 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-
     @property
     def width(self):
         """
             Getter for width
         """
         return self.__width
-
 
     @width.setter
     def width(self, value):
@@ -51,14 +49,12 @@ class Rectangle(Base):
 
         self.__width = value
 
-
     @property
     def height(self):
         """
             Getter for height
         """
         return self.__height
-
 
     @height.setter
     def height(self, value):
@@ -72,14 +68,12 @@ class Rectangle(Base):
 
         self.__height = value
 
-
     @property
     def x(self):
         """
             Getter for x
         """
         return self.__x
-
 
     @x.setter
     def x(self, value):
@@ -93,14 +87,12 @@ class Rectangle(Base):
 
         self.__x = value
 
-
     @property
     def y(self):
         """
             Getter for y
         """
         return self.__y
-
 
     @y.setter
     def y(self, value):
@@ -114,13 +106,11 @@ class Rectangle(Base):
 
         self.__y = value
 
-
     def area(self):
         """
             Returns area of the rectangle
         """
         return self.__width * self.__height
-
 
     def display(self):
         """
@@ -131,7 +121,6 @@ class Rectangle(Base):
         for i in range(self.__height):
             print(" " * self.__x, end="")
             print("#" * self.__width)
-
 
     def __str__(self):
         """
@@ -164,7 +153,6 @@ class Rectangle(Base):
             self.y = args[4]
         except IndexError:
             pass
-
 
     def to_dictionary(self):
         """
