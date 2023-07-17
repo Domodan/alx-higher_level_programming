@@ -30,12 +30,14 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+
     @property
     def width(self):
         """
             getter for width
         """
         return self.__width
+
 
     @width.setter
     def width(self, value):
@@ -49,12 +51,14 @@ class Rectangle(Base):
 
         self.__width = value
 
+
     @property
     def height(self):
         """
             getter for height
         """
         return self.__height
+
 
     @height.setter
     def height(self, value):
@@ -67,6 +71,7 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
 
         self.__height = value
+
 
     @property
     def x(self):
@@ -115,3 +120,14 @@ class Rectangle(Base):
             returns area of the rectangle
         """
         return self.__width * self.__height
+
+
+    def display(self):
+        """
+            prints rectangle to stdout with instance "#"
+        """
+        for i in range(self.__y):
+            print()
+        for i in range(self.__height):
+            print(" " * self.__x, end="")
+            print("#" * self.__width)
