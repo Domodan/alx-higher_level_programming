@@ -94,6 +94,5 @@ class Rectangle:
         """ Method prints rectangle with # """
         if self.__width == 0 or self.__height == 0:
             return ""
-        ampersand = "\n".join(["#" * self.__width for i in range(self.__height)])
-        return ampersand
-                                                                                                                                                                              91,1          Boti
+        ampersa = "\n".join(["#" * self.__width for i in range(self.__height)])
+        return ampersa
