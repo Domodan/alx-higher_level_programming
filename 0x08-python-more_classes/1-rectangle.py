@@ -28,8 +28,9 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """ Method that defines the width setter
-        
+        """
+        Method that defines the width setter
+
         Args:
             value: width
 
