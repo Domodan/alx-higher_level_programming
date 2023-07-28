@@ -8,8 +8,7 @@ class Rectangle:
     """ Class that defines a rectangle """
 
     def __init__(self, width=0, height=0):
-        """
-        Method that initializes the instance
+        """ Method that initializes the instance
 
         Args:
             width: width of the rectangle
@@ -20,8 +19,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """
-        Method that returns the value of the width
+        """ Method that returns the value of the width
 
         Returns:
             width of the rectangle
@@ -30,8 +28,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """
-        Method that defines the width setter
+        """ Method that defines the width setter
         
         Args:
             value: width
@@ -49,8 +46,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """
-        Method that returns the value of the height
+        """ Method that returns the value of the height
 
         Returns:
             height of the rectangle
@@ -59,8 +55,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """
-        Method that defines the height setter
+        """ Method that defines the height setter
 
         Args:
             value: height
