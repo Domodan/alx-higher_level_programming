@@ -20,8 +20,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """
-        Method that returns the value of the width
+        """ Method that returns the value of the width
 
         Returns:
             width of the rectangle
@@ -30,9 +29,8 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """
-        Method that defines the width setter
-        
+        """ Method that defines the width setter
+
         Args:
             value: width
 
@@ -49,8 +47,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """
-        Method that returns the value of the height
+        """ Method that returns the value of the height
 
         Returns:
             height of the rectangle
@@ -59,8 +56,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """
-        Method that defines the height setter
+        """ Method that defines the height setter
 
         Args:
             value: height
@@ -76,8 +72,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """
-        Method that calculates the Rectangle area
+        """ Method that calculates the Rectangle area
 
         Returns:
             rectangle area
@@ -85,8 +80,7 @@ class Rectangle:
         return self.width * self.height
 
     def perimeter(self):
-        """
-        Method that calculates the Rectangle perimeter
+        """ Method that calculates the Rectangle perimeter
 
         Returns:
             rectangle perimeter
