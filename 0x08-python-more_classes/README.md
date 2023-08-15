@@ -12,5 +12,9 @@
 > 7. Change representation
 > 8. Compare rectangles
 > 9. A square is a rectangle
+<<<<<<< HEAD
 
+=======
+> 10. N queens
+>>>>>>> 6f6aeb7acb5a6cc842ffc4831ffe5e6da9bf5a91
 ---
