@@ -19,8 +19,8 @@
 > 14. My genres
 > 15. Only Comedy
 > 16. List shows and genres
-> 17. 
-> 18. Temperatures #0
-> 19. Temperatures #1
-20. Temperatures #2
+> 17. Not my genre
+> 18. No Comedy tonight!
+> 19. Rotten tomatoes
+> 20. Best genre 
 ---
