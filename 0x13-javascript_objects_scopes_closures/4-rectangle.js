@@ -14,4 +14,15 @@ module.exports = class Rectangle {
       sizeY -= 1;
     }
   }
+
+  rotate () {
+    const tempHeight = this.height;
+    this.height = this.width;
+    this.width = tempHeight;
+  }
+
+  double () {
+    [this.width, this.height] = [this.width, this.height]
+      .map(prop => prop * 2);
+  }
 };
