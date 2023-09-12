@@ -16,11 +16,8 @@
 > 11. Second biggest!
 > 12. Object
 > 13. Add file
-> 14. My genres
-> 15. Only Comedy
-> 16. List shows and genres
-> 17. Not my genre
-> 18. No Comedy tonight!
-> 19. Rotten tomatoes
-> 20. Best genre 
+> 14. Const or not const
+> 15. Call me Moby
+> 16. Add me maybe
+> 17. Increment object
 ---
