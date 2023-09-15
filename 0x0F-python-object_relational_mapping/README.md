@@ -17,10 +17,7 @@
 > 12. Update a state
 > 13. Delete states
 > 14. Cities in state
-> 15. 
-> 16. Say my name
-> 17. Go to UTF8
-> 18. Temperatures #0
-> 19. Temperatures #1
-20. Temperatures #2
+> 15. City Relationship 
+> 16. List Relationship
+> 17. From City
 ---
