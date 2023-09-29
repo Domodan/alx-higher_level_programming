@@ -1,31 +1,31 @@
 #!/usr/bin/python3
 """
-    Find the peak in an unordered list of integers
+find the peak in an unordered list of
+integers
 """
-
 
 def find_peak(list_of_integers):
     """
-        Find the peak in a list of intergers
-        Args:
-            list_of_integers(list) -> List of intergers
-        Return:
-            int(the peak integer(s))
+    Find the peak in a list of integers.
+    Args:
+        list_of_integers (list): List of integers.
+    Returns:
+        int: The peak integer(s).
     """
-    if list_of_integers == []:
+    if not list_of_integers:
         return None
 
-    size = len(list_of_integers)
-    if size == 1:
-        return list_of_integers[0]
-    elif size == 2:
-        return max(list_of_integers)
+    left, right = 0, len(list_of_integers) - 1
 
-    mid = int(size / 2)
-    peak = list_of_integers[mid]
-    if peak > list_of_integers[mid - 1] and peak > list_of_integers[mid + 1]:
-        return peak
-    elif peak < list_of_integers[mid - 1]:
-        return find_peak(list_of_integers[:mid])
-    else:
-        return find_peak(list_of_integers[mid + 1:])
+    while left < right:
+        mid = left + (right - left) // 2
+
+        if list_of_integers[mid] > list_of_integers[mid + 1]:
+            # The peak is on the left side of mid (including mid).
+            right = mid
+        else:
+            # The peak is on the right side of mid.
+            left = mid + 1
+
+    # left is now pointing to the peak.
+    return list_of_integers[left]
