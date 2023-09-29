@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 """
-find the peak in an unordered list of
-integers
+Find the peak in an unordered list of integers using binary search
 """
 
 def find_peak(list_of_integers):
     """
-    Find the peak in a list of integers.
+    Find the peak in a list of integers using binary search.
+
     Args:
         list_of_integers (list): List of integers.
+
     Returns:
-        int: The peak integer(s).
+        int: The peak integer.
     """
     if not list_of_integers:
         return None
@@ -21,11 +22,18 @@ def find_peak(list_of_integers):
         mid = left + (right - left) // 2
 
         if list_of_integers[mid] > list_of_integers[mid + 1]:
-            # The peak is on the left side of mid (including mid).
+            # If the current element is greater than the next element, move left
             right = mid
         else:
-            # The peak is on the right side of mid.
+            # Otherwise, move right
             left = mid + 1
 
-    # left is now pointing to the peak.
+    # At the end of the loop, left and right will converge to the peak element
     return list_of_integers[left]
+
+# Example usage:
+if __name__ == "__main__":
+    test_list = [1, 3, 20, 4, 1, 0]
+    result = find_peak(test_list)
+    print("Peak element:", result)
+
